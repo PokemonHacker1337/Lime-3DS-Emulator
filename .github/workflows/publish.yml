@@ -56,4 +56,4 @@ jobs:
             const execa = require("execa");
             const tagAndPush = require('./.github/workflows/ci-merge.js').tagAndPush;
             process.chdir('${{ github.workspace }}/citra-merge');
-            tagAndPush(github, context.repo.owner, `${context.repo.repo}-nightly`, execa);
+            tagAndPush(github, context.repo.owner, `${context.repo.repo}`, execa);
